@@ -8,6 +8,8 @@ public class TimeTest {
 		//time.setHour(-20);
 		time.setHour(10);
 		System.out.println(time.getHour());
+		
+		System.out.println(time.toString());
 	}
 
 }
