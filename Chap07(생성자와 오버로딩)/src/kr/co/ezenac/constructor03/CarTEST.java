@@ -1,4 +1,4 @@
-package kr.co.ezenac.constructor02;
+package kr.co.ezenac.constructor03;
 
 public class CarTEST {
 
