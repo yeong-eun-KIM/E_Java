@@ -7,9 +7,11 @@ public class TimeTest {
 		Time time = new Time();
 		//time.setHour(-20);
 		time.setHour(10);
-		System.out.println(time.getHour());
+		time.setMinute(30);
+		time.setSecond(50);
 		
 		System.out.println(time.toString());
 	}
+	
 
 }

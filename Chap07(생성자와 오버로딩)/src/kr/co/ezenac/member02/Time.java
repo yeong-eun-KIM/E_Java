@@ -19,9 +19,33 @@ public class Time {
 		}
 		this.hour = hour;
 	}
+		
 	
+	public int getMinute() {
+		return minute;
+	}
+
+	public void setMinute(int minute) {
+		//분에 대한 예외처리 코드 작성
+		if(minute < 0 || minute > 59) {
+			System.out.println("분을 잘못 입력하셨습니다.");
+		}
+		this.minute = minute;
+	}
+
+	public int getSecond() {
+		return second;
+	}
+
+	public void setSecond(int second) {
+		if(second < 0 || second > 59) {
+			System.out.println("초를 잘못 입력하셨습니다.");
+		}
+		this.second = second;
+	}
+
 	@Override
 	public String toString() {
-		return this.getHour() + "시 ";
+		return this.getHour() + "시 "+ this.getMinute() + "분 " + this.getSecond() + "초 입니다.";
 	}
 }
