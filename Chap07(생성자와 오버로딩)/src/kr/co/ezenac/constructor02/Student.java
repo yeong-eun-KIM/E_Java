@@ -27,9 +27,20 @@ public class Student {
 	}
 
 
+	// 매개변수가 int 뿐인 생성자
+	public Student(int age) {
+		System.out.println("매개변수가 int만 있는 생성자 호출");
+		//super();
+		this.age = age;
+	}	
+	
+	
+	
 	public String getName() {
 		return name;
 	}
+
+
 	public int getAge() {
 		return age;
 	}

@@ -14,8 +14,13 @@ public class StudentTest {
 		System.out.println(student2);
 		
 		//String만 있는 생성자
-		Student studnet3 = new Student("이순신");
-		System.out.println(studnet3);
+		Student student3 = new Student("이순신");
+		System.out.println(student3);
+		
+		//int만 있는 생성자
+		Student student4 = new Student(30);
+		System.out.println(student4);
+		
 		
 	}
 
