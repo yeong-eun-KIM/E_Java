@@ -14,10 +14,11 @@ public class Car {
 	 */
 	public Car () {
 		//직접적으로 인스턴스 멤버변수를 초기화
-		this.color = "노랑";
-		this.gearType = "수동";
-		this.door = 4;
-	} //default 값을 지정해준 case
+//		this.color = "노랑";
+//		this.gearType = "수동";
+//		this.door = 4; //default 값을 지정해준 case
+		this("검정", "오토", 2); //this()가 아래 Car를 호출함
+	} 
 	
 	
 	
