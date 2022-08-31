@@ -11,11 +11,11 @@ package kr.co.ezenac.inheritance;
 	}
 
 	public Circle(Point center, int radius) {
-		//super();
+		super();
 		System.out.println("Circle 클래스의 매개변수가 있는 생성자 호출");
 		this.center = center;
 		this.radius = radius;
-	}
+	}	
 	
 	@Override
 		public void draw() {
