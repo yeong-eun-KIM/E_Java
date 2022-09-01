@@ -15,12 +15,13 @@ public class CustomerTest2 {
 		Customer customerL2 = new GoldCustomer(202210, "이성계"); //업캐스팅
 		Customer customerC = new GoldCustomer(202211, "최영");
 		Customer customerK = new VIPCustomer(202212, "김유신", 77777);
+		//VIPCustomer downCastingcustomerK = (VIPCustomer)customerK; // 다운캐스팅
+		
 		
 		customerL.bonusPoint = 10000;
 		customerS.bonusPoint = 10000;
 		customerL2.bonusPoint = 10000;
 		customerC.bonusPoint = 10000;
-		customerK.bonusPoint = 10000;
 		
 		
 		customerList.add(customerL);
@@ -49,7 +50,7 @@ public class CustomerTest2 {
 			System.out.println(customer.getCustomerName() + "님이 " + cost + "원 지불하셨습니다.");
 		}
 		
-		// 문제 : 등급별 비율에 따른 포인트가 아니라 앞서 더해진 포인트가 누적됨 (?)
+		
 		System.out.println();
 		System.out.println("=====누적 보너스 포인트 계산=====");
 		for(Customer customer : customerList) {

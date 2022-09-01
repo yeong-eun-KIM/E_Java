@@ -7,6 +7,30 @@ class Animal {
 		System.out.println("동물이 움직입니다.");
 	}
 
+	public void checkDownCast(ArrayList<Animal> list) {
+		for(int i = 0; i < list.size(); i++) {
+			Animal animal = list.get(i);
+			
+			if (animal instanceof Dog) {
+				Dog danimal = (Dog)animal; // 다운캐스팅
+				danimal.playBall(); 
+				}
+			else if (animal instanceof Tiger) {
+					Tiger tanimal = (Tiger)animal;
+					tanimal.hunt();
+			}
+			else if (animal instanceof Eagle)	{
+					Eagle eanimal = (Eagle)animal;
+					eanimal.pickUpFish();
+			}
+			else {
+						System.out.println("ERROR");
+			}														
+		}
+		
+		
+	}
+	
 	public void eat() {
 		System.out.println("동물이 먹습니다.");
 	}
@@ -58,12 +82,6 @@ public class AnimalTest {
 		Animal danimal = new Dog();		 //업캐스팅이 이뤄짐
 		Animal tanimal = new Tiger();
 		Animal eanimal = new Eagle();
-		
-		AnimalTest test = new AnimalTest();
-		test.moveAnimal(danimal);
-		test.moveAnimal(tanimal);
-		test.moveAnimal(eanimal);
-		
 		System.out.println();
 		
 		ArrayList<Animal> animalist = new ArrayList<>();
@@ -71,7 +89,13 @@ public class AnimalTest {
 		animalist.add(tanimal);
 		animalist.add(eanimal);
 		
-		for(Animal animal : animalist) {animal.move();}		//다형성, 하나의 코드로 다양한 케이스를 커버가능
+		for(Animal animal : animalist) {
+			animal.move();
+			
+			}		//다형성, 하나의 코드로 다양한 케이스를 커버가능
+		System.out.println();		
 		
+		}
+
+	
 	}
-}
