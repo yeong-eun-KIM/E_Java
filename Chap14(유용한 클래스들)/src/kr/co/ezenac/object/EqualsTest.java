@@ -18,7 +18,7 @@ public class EqualsTest {
 		System.out.println(student2.hashCode());
 		System.out.println(student3.hashCode());
 		
-		System.out.println();
+		System.out.println("===============================================");
 		
 		String str1 = new String("abc");
 		String str2 = new String("abc");
@@ -29,8 +29,14 @@ public class EqualsTest {
 		
 		System.out.println();
 		
+		System.out.println(System.identityHashCode(str1));
+		System.out.println(System.identityHashCode(str2));
+		
 		Integer i1 = new Integer(100);
 		Integer i2 = new Integer(100);
+		
+		System.out.println(System.identityHashCode(i1));
+		System.out.println(System.identityHashCode(i2));
 		
 		System.out.println(i1.equals(i2));
 		System.out.println(i1.hashCode());
